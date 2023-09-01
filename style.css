@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,body{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    height: 100vh;
+    display: grid;
+    grid-template: minmax(150px,1fr) 6fr / minmax(200px,1fr) 5fr;
+}
+
+.side-bar{
+    min-width: 200px;
+    display: grid;
+    justify-content: start;
+    align-content: start;
+    row-gap: 50px;
+    background-color: #9ca3af;
+    grid-area: 1/1/3/2;
+}
+
+
+.side-bar img{
+    width: 25px;
+    
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    font-size: large;
+    font-weight:bold;
+    margin-left: 5px;
+    margin-top: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+img.logo-icon{
+    width: 35px;
+}
+
+.side-bar div div{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.side-bar div div:hover{
+    opacity: 0.5;
+}
+
+.side-bar div div:active{
+    opacity: 1;
+}
+
+.side-bar .sector1, .side-bar .sector2{
+    display: grid;
+    row-gap: 10px;
+    margin-left: 10px;
+    
+}
+
+
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    padding-top: 10px;
+    padding-left: 20px;
+    border-bottom: 3px solid rgb(226, 226, 226);
+}
+
+.first-row{
+    display: grid;
+    grid-template-columns: 21px 10fr 21px 3fr;
+    align-items: center;
+    align-content: start;
+}
+
+
+.search-button, .notifs{
+    width: 21px;
+    cursor: pointer;
+}
+
+.search-button:hover, .notifs:hover{
+    opacity: 0.7;
+}
+.search-button:active, .notifs:active{
+    opacity: 1;
+}
+
+input.search-area{    
+    box-sizing: border-box;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    border: none;
+    height: 23px;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+
+
+.user-account{
+    justify-self: start;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user-account:hover
+{
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.user-account:active{
+    opacity:1;
+}
+
+.small-profile{
+    width: 45px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.second-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+
+.big-profile{
+    width: 70px;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-self: start;
+}
+
+.profile-name{
+    font-size: large;
+    font-weight: bold;
+}
+.greeting{
+    font-size: 12px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    justify-self: center;
+    margin-left: 12vw;
+    margin-right: 20px;
+
+}
+
+.buttons button{
+    width: 80px;
+    padding: 7px 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: #0f172a;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    opacity: 0.7;
+}
+
+.buttons button:active{
+    opacity: 1;
+}
+
+.container{
+    padding: 20px 20px 30px 20px;
+    background-color: #f1f5f9;
+    grid-area: 2/2/3/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.projects{
+    display: grid;
+    grid-template: 20px 1fr 1fr 1fr/ 1fr 1fr;
+    gap: 10px;
+}
+
+.projects>div{
+    border-left: 6px #334155 solid;
+}
+
+.projects p{
+    grid-column: 1/3;
+}
+
+.other-stuff{
+    display: grid;
+    grid-template: 20px 1fr 20px 1fr / 1fr;
+    gap: 10px;
+}
+
+.projects>p, .other-stuff>p{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+
+.projects>div, .other-stuff>div{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.action-buttons{
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+    gap: 15px;
+}
+
+.action-buttons>img{
+    width: 20px;
+}
+
+.projects>div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 20px 10px;
+    cursor: pointer;
+}
+
+.projects>div:hover{
+    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.700);;
+}
+
+.projects>div:active{
+    opacity: 0.8;
+}
+
+.projects>div>p{
+    font-size: small;
+    color: gray;
+    margin: 0;
+    margin-bottom: auto;
+}
+
+.announcements{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 20px 0px 20px;
+    font-size: small;
+}
+.announcements>div>p{
+    margin: 0;
+    font-size: 10px;
+    color: gray;
+
+}
+
+.announcements>div,.trending>div,.action-buttons>img{
+    cursor: pointer;
+}
+
+.announcements>div:hover,.trending>div:hover,.action-buttons>img:hover{
+    opacity: 0.8;
+}
+
+.announcements>div:active,.trending>div:active,.action-buttons>img:active{
+    opacity: 1;
+}
+
+
+.announcements>div:nth-child(-n+2){
+    border-bottom: 1px gray solid;
+
+}
+
+.announcements>div:nth-child(-n+2)>p{
+padding-bottom: 10px;
+
+}
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 25px 20px 0px 20px;
+}
+
+.trending-profile{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.trending-profile>img{
+    width: 40px;
+}
+
+.trending-name{
+    color: gray;
+    font-size: 10px;
+}
+
+.trending-name>.tag{
+    color: black;
+    font-weight: bold;
+}
+
+b,span{
+    padding-bottom: 2px;
+}
+
+.projects>div,.other-stuff>div{
+    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.300);
+}
+
+
+
